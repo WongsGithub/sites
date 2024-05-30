@@ -1,0 +1,129 @@
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body {
+    background:rgba(66,102,102,0.1);
+}
+
+
+form{
+    width: 500px;
+    height: 310px;
+    border-radius: 3px;
+    margin: 50px auto;
+    background:rgba(66,102,102,0.3);
+    border-top:20px solid rgba(66,102,102,0.7);
+    border-bottom:20px solid rgba(66,102,102,0.7);
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 90%;
+  }
+}
+
+
+
+form span,form input[type="text"],form input[type="password"], form button{
+    display: block;
+}
+
+form span{
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+    padding:10px 0px;
+    color: rgba(99,99,99,1);
+}
+
+form a{
+    text-decoration:none;
+    color: #065279;
+}
+
+form input[type="text"],form input[type="password"], form button{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:boder-box;
+    width: 80%;
+    height: 35px;
+    margin: 15px auto;
+    border: 0px;
+    border-radius: 3px;
+}
+form input{
+    background: rgba(66,102,102,0.5);
+}
+
+form input:focus{
+    outline: 1px solid rgba(66,102,102,0.9);
+}
+form button{
+    background: #549688;
+    color: rgb(60,60,60);
+    font-size: 1.2em;
+}
+
+@media screen and (max-height: 500px) {
+  form {
+    height: 300px;
+  }
+  form input[type="text"],form input[type="password"], form button{
+    margin: 8px auto;
+  }
+  form span{
+      padding: 7px 0px;
+}
+}
+
+.status{
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+
+}
+
+.status input{
+    width: 20px;
+    height: 20px;
+}
+
+.status input,.status label{
+    float: left;
+}
+
+.status a{
+    float:right;
+}
+.status label,.status a{
+    margin-top: 5px;
+}
+
+.error{
+    display: none;
+    color: red;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+
+
+

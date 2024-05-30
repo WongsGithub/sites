@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+</head>
+{% load static %}
+<link href="{% static 'blog/css/login.css'%}" rel="stylesheet">
+
+  <body>
+    <form action="">
+        {% csrf_token %}
+        <span>Sign in to your accuont</span>
+        <input name="username" type="text" placeholder="Email"></input>
+        <input name="password" type="password" placeholder="Password"></input>
+        <input name="password1" type="password" placeholder="Confirm Password" style="display:none;"></input>
+        <div class="status">
+          <input type="checkbox" value="" id="remember" />
+          <label for="remember">Remember me</label>
+          <a href="javascript:void(0);">Forget Password?</a>
+        </div>
+        <button type="button" value="" onclick="login();">Login</button>
+        <p class="error"></p>
+        <span>Don't have an account? <a href="javascript:void(0);" onclick="to_sign_up();">Sign up</a></span>
+    </form>
+    <script src="{% static 'common/js/jquery.min.js' %}"></script>
+    <script src="{% static 'blog/js/login.js' %}"></script>
+  </body>
+</html>
